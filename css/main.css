@@ -21,6 +21,18 @@
 
     }
 
+    nav{
+        background-image: url(../imagens/fundo.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: absolute;
+        left: 0em;
+        top: 0em;
+        width: 100%;
+    }
+
     .ul1{
         list-style: none;
         display: flex;
@@ -30,7 +42,7 @@
 
   .ul1 div{
         background-color: rgb(0, 0, 0, 0.5);
-        border-radius: 2em;
+        border-radius: 0.5em;
         width: 29%;
         height: 1em;
         text-align: center;
@@ -41,13 +53,13 @@
     .ul2{
         list-style: none;
         display: flex;
-        justify-content: space-around;
-        margin-top: 1em;
+        justify-content: center;
+
     }
 
     .ul2 div{
         background-color: rgb(0, 0, 0, 0.5);    
-        border-radius: 2em;
+        border-radius: 0.5em;
         width: 29%;
         height: 1em;
         text-align: center;
@@ -70,5 +82,19 @@
         margin: 1em auto;
         
     }
+
+    .divFooter{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .divFooter a{
+        padding-top: 1em;
+        text-decoration: none;
+        color: cyan;
+    }
+
+
     
 }

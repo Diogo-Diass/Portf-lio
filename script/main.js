@@ -1,4 +1,4 @@
-const img = document.getElementById("img")
+/*const img = document.getElementById("img")
 
 const imgs = document.querySelectorAll("#img img")
 
@@ -60,5 +60,5 @@ setInterval(carrossel, 2300)
 	window.scrollTo(0, 420)
 	
  })
-
+*/
 
