@@ -1,10 +1,10 @@
-/*const img = document.getElementById("img")
+const img = document.getElementById("img")
 
 const imgs = document.querySelectorAll("#img img")
 
 let idx = 0;
 
-function carrossel(){
+/*function carrossel(){
 	idx++;
 	
 	if(idx > imgs.length - 1){
@@ -14,13 +14,11 @@ function carrossel(){
 	img.style.transform = `translateX(${-idx * 100}%)`
 }
 setInterval(carrossel, 2300)
-
+*/
  let posicao = document.getElementById("sobreMim")
 
  //217.90625
  let p = posicao.getBoundingClientRect()
-
- console.log(p)
 
  let sobreMim = document.getElementById("sobre")
 
@@ -34,12 +32,12 @@ setInterval(carrossel, 2300)
 
  sobreMim.addEventListener("click", function() {
 
-	window.scrollTo(0, 420)
+	window.scrollTo(0, 580)
 	
  })
  oqFaco.addEventListener("click", function() {
 
-	window.scrollTo(0, 760)
+	window.scrollTo(0, 870)
 	
  })
 
@@ -60,5 +58,5 @@ setInterval(carrossel, 2300)
 	window.scrollTo(0, 420)
 	
  })
-*/
+
 
