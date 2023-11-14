@@ -32,12 +32,12 @@ setInterval(carrossel, 2300)
 
  sobreMim.addEventListener("click", function() {
 
-	window.scrollTo(0, 580)
+	window.scrollTo(0, 850)
 	
  })
  oqFaco.addEventListener("click", function() {
 
-	window.scrollTo(0, 870)
+	window.scrollTo(0, 1440)
 	
  })
 
@@ -49,7 +49,7 @@ setInterval(carrossel, 2300)
 
  objetivo.addEventListener("click", function() {
 
-	window.scrollTo(0, 420)
+	window.scrollTo(0, 2300)
 	
  })
 
@@ -59,4 +59,39 @@ setInterval(carrossel, 2300)
 	
  })
 
+ document.addEventListener('DOMContentLoaded', function () {
+	window.addEventListener('scroll', revealContent);
+  });
+  
+  function revealContent() {
+	var content = document.getElementById('content');
+	var content2 = document.getElementById('content2');
+	var content3 = document.getElementById('content3');
+
+	var contentPosition = content.getBoundingClientRect().top;
+	var contentPosition2 = content2.getBoundingClientRect().top;
+	var contentPosition3 = content3.getBoundingClientRect().top;
+
+
+	var screenPosition = window.innerHeight / 1.3; // Ajuste conforme necessário
+	var screenPosition2 = window.innerHeight / 1.6; // Ajuste conforme necessário
+	var screenPosition3 = window.innerHeight / 2; // Ajuste conforme necessário
+  
+  
+	if (contentPosition < screenPosition) {
+	  content.style.opacity = '1';
+	  content.style.transform = 'translateX(0)';
+	}
+
+	  if (contentPosition2 < screenPosition2) {
+		content2.style.opacity = '1';
+		content2.style.transform = 'translateX(0)';
+	}
+
+	if (contentPosition3 < screenPosition3) {
+		content3.style.opacity = '1';
+		content3.style.transform = 'translateX(0)';
+	}
+  }
+  
 

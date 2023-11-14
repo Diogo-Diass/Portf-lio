@@ -13,10 +13,7 @@
         padding: 0;
     }
 
-    header{
-
-        
-    }
+   
 
     header nav{
         display: flex;
@@ -95,17 +92,42 @@
         color: cyan;
     }
 
-    .secSobreMim{
-
-        background-color: black;
-    }
-
-    .secSobreMim p{
+    .divSecao p{
         line-height: 1.5;
         text-align: justify;
         margin: 1em;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+
+    .secSobreMim{
+
+        background-color: black;
+    }
+
+    .content {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 0.5s, transform 2s; /* Reduzi a duração para 0.5 segundos */
+        border: 0.1em solid gray;
+        margin: 0.5em;
+      }
+
+      .content2 {
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 0.5s, transform 2s; /* Reduzi a duração para 0.5 segundos */
+        border: 0.1em solid gray;
+        margin: 2em 0.5em;
+      }
+
+      .content3 {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 0.5s, transform 2s; /* Reduzi a duração para 0.5 segundos */
+        border: 0.1em solid gray;
+        margin: 2em 0.5em;
+      }
+      
 
 
     
